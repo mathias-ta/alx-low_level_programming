@@ -8,7 +8,7 @@
 int main(void)
 {
 int single_digit_nums = '0';
-int single_digit_nums_2 = '0';
+int single_digit_nums_2 = '1';
 
 while (single_digit_nums <= '9')
 {
