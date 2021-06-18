@@ -13,12 +13,13 @@ while (single_digit_nums <= '9')
 {
 
 putchar(single_digit_nums);
-if(single_digit_nums != 9){
+if(single_digit_nums < 9)
+{
 
 putchar(',');
-putchar(' ');
-
 }
+
+putchar(' ');
 single_digit_nums++;
 
 }
