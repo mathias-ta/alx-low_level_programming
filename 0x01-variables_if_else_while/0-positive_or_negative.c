@@ -4,7 +4,7 @@
 
 /**
  *main - starting of the code
- *return - always returns 0
+ *return: always 0
  */
 
 int main(void)
