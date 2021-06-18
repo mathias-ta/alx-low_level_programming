@@ -24,7 +24,7 @@ putchar(single_digit_nums);
 putchar(single_digit_nums_2);
 putchar(single_digit_nums_3);
 
-if (single_digit_nums == '8' && single_digit_nums_2 == '9' && single_digit_nums_3 == '9')
+if (single_digit_nums == '7' && single_digit_nums_2 == '8' && single_digit_nums_3 == '9')
 {
 }
 
