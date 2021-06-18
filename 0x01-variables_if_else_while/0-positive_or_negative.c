@@ -2,6 +2,10 @@
 #include <time.h>
 #include <stdio.h>
 
+/**
+ *main - starting of the code
+ */
+
 int main(void)
 {
 int n;
