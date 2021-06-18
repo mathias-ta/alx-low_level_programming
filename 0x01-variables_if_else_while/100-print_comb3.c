@@ -19,9 +19,12 @@ while (single_digit_nums_2 <= '9')
 putchar(single_digit_nums);
 putchar(single_digit_nums_2);
 
-if (single_digit_nums != '8' && single_digit_nums_2 != '9')
+if (single_digit_nums == '8' && single_digit_nums_2 == '9')
 {
+}
 
+else
+{
 putchar(',');
 putchar(' ');
 }
