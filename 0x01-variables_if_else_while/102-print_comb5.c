@@ -19,7 +19,7 @@ while (num3 <= '9')
 {
 while (num4 <= '9')
 {
-if (num1 == num3 && num2 = num4)
+if (num1 == num3 && num2 == num4)
 {
 }
 else
