@@ -1,5 +1,3 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
 
 /**
@@ -11,7 +9,8 @@ int main(void)
 {
 char alphabet = 'a';
 
-while (alphabet <= 'z'){
+while (alphabet <= 'z')
+{
 
 putchar(alphabet);
 alphabet++;
