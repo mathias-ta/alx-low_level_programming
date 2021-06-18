@@ -21,7 +21,7 @@ putchar(singleDig_nums);
 putchar(singleDig_nums2);
 putchar(singleDig_nums3);
 
-if (singleDig_nums == '7' && singleDig_nums2 == '8' && singleDig_num_3 == '9')
+if (singleDig_nums == '7' && singleDig_nums2 == '8' && singleDig_num3 == '9')
 {
 }
 else
