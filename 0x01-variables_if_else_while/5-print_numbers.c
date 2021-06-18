@@ -12,11 +12,11 @@ int single_digit_nums = 0;
 while (single_digit_nums <= 9)
 {
 
-printf(single_digit_nums);
+printf("%d", single_digit_nums);
 single_digit_nums++;
 
 }
-printf('\n');
+printf("\n");
 
 return (0);
 
