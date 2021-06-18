@@ -37,16 +37,16 @@ putchar(' ');
 num4++;
 }
 num3++;
-num4 = 0;
+ num4 = '0';
 }
 num2++;
-num3 = 0;
-num4 = 1;
+num3 = '0';
+num4 = '1';
 }
 num1++;
-num2 = 0;
-num3 = 0;
-num4 = 1;
+num2 = '0';
+num3 = '0';
+num4 = '1';
 }
 putchar('\n');
 
