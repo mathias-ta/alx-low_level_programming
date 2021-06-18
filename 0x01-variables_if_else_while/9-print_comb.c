@@ -19,7 +19,7 @@ if (single_digit_nums != '9')
 putchar(',');
 putchar(' ');
 }
- 
+
 single_digit_nums++;
 
 }
