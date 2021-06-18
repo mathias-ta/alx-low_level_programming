@@ -13,7 +13,7 @@ int single_digit_nums_2 = '0';
 while (single_digit_nums <= '9')
 {
 
-while (single_digit_num_2 <= '9')
+while (single_digit_nums_2 <= '9')
 {
 
 putchar(single_digit_nums);
@@ -29,6 +29,7 @@ single_digit_nums_2++;
 }
 
 single_digit_nums++;
+single_digit_nums_2 = single_digit_nums + 1;
 
 }
 putchar('\n');
