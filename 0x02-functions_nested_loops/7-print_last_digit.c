@@ -14,9 +14,9 @@ if (num >= 0)
 }
 else
 {
-num *= -1;
+num = num * -1;
 }
- 
+
 _putchar('0' + (num % 10));
 return (num % 10);
 
