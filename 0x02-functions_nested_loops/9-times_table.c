@@ -16,25 +16,25 @@ while (i <= 9)
 while (j <= 9)
 {
 
-_putchar('0' + num);
+_putchar(num);
 num = i * j;
 if (j == 0)
 {
-_putchar('0' + num);
+_putchar(num);
 }
 else if (num <= 9)
 {
 _putchar(',');
 _putchar(' ');
 _putchar(' ');
-_putchar('0' + num);
+_putchar(num);
 }
 else
 {
 _putchar(',');
 _putchar(' ');
-_putchar('0' + (num / 10));
-_putchar('0' + (num % 10));
+_putchar((num / 10));
+_putchar((num % 10));
 }
 j++;
 }
