@@ -14,7 +14,7 @@ if (num > 0)
 return (num);
 
 }
-else if (n == 0)
+else if (num == 0)
 {
 return (0);
 
