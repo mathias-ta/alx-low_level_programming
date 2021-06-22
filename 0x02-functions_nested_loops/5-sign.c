@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- *_isalpha - checks whether the character is alphabet or not
+ *print_sign - prints the sign of a number
  *@n: character to be checked
  *Return: returns 1 if it is positive, returns 0 if it is 0 and returns -1 else
  */
