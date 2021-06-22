@@ -3,7 +3,7 @@
 
 /**
  *_abs - absolute value of a number
- *@num - number to be evaluated
+ *@num: number to be evaluated
  *Return: returns 0
  */
 
