@@ -18,7 +18,11 @@ while (j <= 9)
 
 _putchar('0' + num);
 num = i * j;
-if (j <= 9)
+if (j == 0)
+{
+_putchar('0' + num);
+}
+else if (num <= 9)
 {
 _putchar(',');
 _putchar(' ');
