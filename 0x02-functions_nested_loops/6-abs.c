@@ -3,6 +3,7 @@
 
 /**
  *_abs - absolute value of a number
+ *@num - number to be evaluated
  *Return: returns 0
  */
 
@@ -21,7 +22,7 @@ return (0);
 }
 else
 {
-return (-1*num);
+return (-1 * num);
 
 }
 
