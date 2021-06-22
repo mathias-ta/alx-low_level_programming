@@ -17,17 +17,24 @@ while (j <= 9)
 {
 
 _putchar('0' + num);
-num += i;
-if (j < 9)
+num = i * j;
+if (j <= 9)
 {
 _putchar(',');
 _putchar(' ');
+_putchar(' ');
+_putchar('0' + num);
 }
 else
-_putchar('\n');
- 
+{
+_putchar(',');
+_putchar(' ');
+_putchar('0' + (num / 10));
+_putchar('0' + (num % 10));
+}
 j++;
 }
+_putchar('\n');
 i++;
 j = 0;
 }
