@@ -13,7 +13,7 @@ printf("Infinite loop incoming :(\n");
 
 i = 0;
 
-while (i < 10) /* i is always less than 10 and no line of code to change the value */
+while (i < 10) // i is always less than 10 and no line of code to change
 {
 putchar(i);
 }
