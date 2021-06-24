@@ -2,7 +2,8 @@
 #include <stdio.h>
 
 /**
- *print_most_numbers - print 0 to 9 exept 2 & 4
+ *print_line - prints a line
+ *@n: number of line
  *Return: void
  */
 
@@ -12,12 +13,17 @@ int i = 0
 
 while (i < n)
 {
-
+if (n > 0)
+{
 _putchar('_');
-
+_putchar('\n');
+}
+else
+{
+_putchar('\n');
+}
 i++;
 }
-_putchar('\n');
 
 
 }
