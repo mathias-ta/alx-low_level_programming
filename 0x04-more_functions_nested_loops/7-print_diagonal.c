@@ -16,7 +16,7 @@ while (i < n)
 if (n > 0)
 {
 _putchar(' ');
-_putchar('\\');
+_putchar('\$');
 _putchar('\n');
 }
 else
