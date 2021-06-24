@@ -27,6 +27,7 @@ j++;
 while (k < size - 1)
 {
 _putchar('#');
+k++;
 }
 k = j;
 _putchar('\n');
