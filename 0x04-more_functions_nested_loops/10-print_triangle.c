@@ -10,27 +10,29 @@
 void print_triangle(int size)
 {
 int i = 1;
-int j;
-int k = 1;
+int j = size - 1;
+ int k = 1, l, m = 1;
 
 if (size > 0)
 {
 while (i <= size)
 {
-j = size - k;
-while (j >= 1)
+while (k <= j)
 {
 _putchar(' ');
-j--;
+k++;
 }
-k = size - j;
-while (k >= 1)
+l = size - j;
+while (m <= l)
 {
 _putchar('#');
-k--;
+m++;
 }
+m = 1;
+k = 1;
 _putchar('\n');
 i++;
+j--;
 }
 }
 else
