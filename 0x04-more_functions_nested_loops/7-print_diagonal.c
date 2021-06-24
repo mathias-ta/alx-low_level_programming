@@ -29,7 +29,6 @@ i++;
 else
 {
 _putchar('\n');
-break;
 }
 
 
