@@ -29,7 +29,7 @@ while (k < size - 1)
 _putchar('#');
 k++;
 }
-k = j;
+k = size - j;
 _putchar('\n');
 i++;
 }
