@@ -17,19 +17,18 @@ if (size > 0)
 {
 while (i <= size)
 {
-
+j = size - k;
 while (j >= 1)
 {
 _putchar(' ');
 j--;
 }
-j++;
-while (k < size - 1)
+k = size - j;
+while (k >= 1)
 {
 _putchar('#');
-k++;
+k--;
 }
-k = size - j;
 _putchar('\n');
 i++;
 }
