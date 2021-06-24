@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- *print_diagonal - print space diagonaly
+ *print_square - print space diagonaly
  *@size: size of the square
  *Return: void
  */
