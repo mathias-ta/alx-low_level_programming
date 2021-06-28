@@ -64,7 +64,7 @@ int prod = 1;
 int fnum = 0;
 int num;
 int leng = 0;
-while(*s != '\0')
+while (*s != '\0')
 {
 leng++;
 s++;
