@@ -33,13 +33,13 @@ while (i <= _strlen(s))
 if (*s == '-')
 {
 sign++;
-s++;
 }
 if (*s >= '0' && *s <= '9')
 {
 break;
 }
 i++;
+s++;
 }
 if (sign % 2 != 0)
 {
