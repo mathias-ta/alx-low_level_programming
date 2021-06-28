@@ -31,8 +31,7 @@ int i = 0;
 while (*str != '\0' && i <  _strlen(str))
 {
 putchar(str[i]);
-str += 2;
-i++;
+i += 2;
 }
 putchar('\n');
 
