@@ -58,7 +58,7 @@ return (1);
 
 int _atoi(char *s)
 {
-int i = _strlen(s) - 1;
+int i = _strlen(s);
 int prod = 1;
 int fnum = 0;
 int num;
@@ -71,7 +71,7 @@ break;
 if (*s >= '0' && *s <= '9')
 {
 num = *s - '0';
-fnum = fnum + num * prod;
+fnum = fnum + (num * prod);
 prod *= 10;
 }
 i--;
