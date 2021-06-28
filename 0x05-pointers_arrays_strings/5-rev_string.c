@@ -17,12 +17,15 @@ len++;
 s++;
 }
 s--;
-while (len > 0)
-{
-putchar(*s);
 len--;
-s--;
+int i;
+char tmp;
+while (i < len)
+{
+tmp = s[i];
+s[i] = s[len];
+s[len] = tmp;
+i++, len--;
 }
-putchar('\n');
 
 }
