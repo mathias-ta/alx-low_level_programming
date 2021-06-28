@@ -2,6 +2,55 @@
 #include <stdio.h>
 
 /**
+ *_strlen - length of the string s
+ *@s: the string
+ *Return: the length of the string s
+ */
+
+int _strlen(char *s)
+{
+int len = 0;
+while (*s != '\0')
+{
+len++;
+s++;
+}
+return (len);
+}
+
+/**
+ *signs - determines the sign of the number
+ *@s: the character to be determined
+ *Return: the sign
+ */
+
+int signs(char *s)
+{
+int sign = 0;
+int i = 0;
+while (i < _strlen(s))
+{
+if (*s == '-')
+{
+sign++;
+}
+if (*s >= '0' && *s <= '9')
+{
+break;
+}
+i++;
+}
+if (sign % 2 != 0)
+{
+return (-1);
+}
+else
+{
+return (1);
+}
+}
+
+/**
  *_atoi - change character into int
  *@s: character to be changed
  *Return: an int
@@ -9,9 +58,26 @@
 
 int _atoi(char *s)
 {
+int i = 0;
+int prod = 1;
+int fnum = 0;
+int num;
+while (i < _strlen(s))
+{
+if (fnum > 0 && !(*s >= '0' && *s <= '9'))
+{
+break;
+}
+if (*s >= '0' && *s <= '9')
+{
+num = *s - '0';
+fnum = fnum + num * prod;
+prod *= 10;
+}
+i++;
+}
+fnum = signs(s) * fnum;
 
-int i = charToInt(s);
-
-return (i);
+return (fnum);
 
 }
