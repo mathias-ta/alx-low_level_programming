@@ -18,7 +18,7 @@ s++;
 }
 s--;
 len--;
-int i;
+int i = 0;
 char tmp;
 while (i < len)
 {
