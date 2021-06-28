@@ -39,7 +39,11 @@ i++;
 }
 else
 {
-putchar(str[leng - 1]);
+while (str[i + 1] != '\0' && (i + 1) < leng)
+{
+putchar(str[i + 1]);
+i++;
+}
 }
 putchar('\n');
 
