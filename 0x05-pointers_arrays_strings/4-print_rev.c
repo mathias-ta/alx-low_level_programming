@@ -14,12 +14,13 @@ int len = 0;
 while (*s != '\0')
 {
 len++;
-str++;
+s++;
 }
 while (len > 0)
 {
 putchar(*s);
 len--;
+s--;
 }
 putchar('\n');
 
