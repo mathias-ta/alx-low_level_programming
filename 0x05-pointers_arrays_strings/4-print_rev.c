@@ -16,6 +16,7 @@ while (*s != '\0')
 len++;
 s++;
 }
+len++;
 while (len > 0)
 {
 putchar(*s);
