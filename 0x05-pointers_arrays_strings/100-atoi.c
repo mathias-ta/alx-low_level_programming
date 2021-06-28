@@ -61,7 +61,7 @@ int _atoi(char *s)
 {
 
 int prod = 1;
-int fnum = 0;
+long int fnum = 0;
 int num;
 int leng = 0;
 while(*s != '\0')
