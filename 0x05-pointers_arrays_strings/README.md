@@ -1,0 +1,1 @@
+Here are pointers, arrays and strings exersises
