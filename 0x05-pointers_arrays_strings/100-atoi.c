@@ -28,7 +28,7 @@ int signs(char *s)
 {
 int sign = 0;
 int i = 0;
-while (i < _strlen(s))
+while (i <= _strlen(s))
 {
 if (*s == '-')
 {
