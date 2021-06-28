@@ -58,18 +58,18 @@ return (1);
 
 int _atoi(char *s)
 {
-int i = _strlen(s) - 1;
+
 int prod = 1;
 int fnum = 0;
 int num;
-int len = 0;
+int leng = 0;
 while(*s != '\0')
 {
-len++;
+leng++;
 s++;
 }
 s--;
-while (len > 0)
+while (leng > 0)
 {
 if (fnum > 0 && !(*s >= '0' && *s <= '9'))
 {
@@ -81,7 +81,7 @@ num = s - '0';
 fnum = fnum + (num * prod);
 prod *= 10;
 }
-len--;
+leng--;
 s--;
 }
 fnum = signs(s) * fnum;
