@@ -2,15 +2,14 @@
 #include <stdio.h>
 
 /**
- *swap_int - swaps values of pointer a and b
- *@a: intiger 1
- *@b: integer 2
- *Return: returns void
+ *_strlen - length of a string
+ *@s: string
+ *Return: returns the length of a string
  */
 
 int _strlen(char *s)
 {
 
-return (s.length);
+return (*s.length);
 
 }
