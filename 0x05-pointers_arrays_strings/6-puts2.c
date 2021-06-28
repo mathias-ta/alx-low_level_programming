@@ -2,12 +2,12 @@
 #include <stdio.h>
 
 /**
- *_puts2 - print every other character of a string
+ *puts2 - print every other character of a string
  *@str: string
  *Return: void
  */
 
-void _puts2(char *str)
+void puts2(char *str)
 {
 
 while (*str != '\0')
