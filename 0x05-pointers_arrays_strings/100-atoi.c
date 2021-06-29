@@ -57,7 +57,7 @@ break;
 if (*s >= '0' && *s <= '9')
 {
 num = *s - '0';
-fnum = fnum + (num * prod);
+fnum += (num * prod);
 prod *= 10;
 }
 leng--;
