@@ -2,43 +2,20 @@
 #include <stdio.h>
 
 /**
- *_strlen - length of the string s
- *@s: the string
- *Return: the length of the string s
- */
-
-int _strlen(char *s)
-{
-int len = 0;
-while (*s != '\0')
-{
-len++;
-s++;
-}
-return (len);
-}
-
-/**
  *signs - determines the sign of the number
  *@s: the character to be determined
  *Return: the sign
  */
 
-int signs(char *s)
+long int signs(char *s)
 {
-int sign = 0;
-int i = 0;
-while (i <= _strlen(s))
+long int sign = 0;
+while ((*s != '0') && !(*s >= '0' && *s <= '9'))
 {
 if (*s == '-')
 {
 sign++;
 }
-if (*s >= '0' && *s <= '9')
-{
-break;
-}
-i++;
 s++;
 }
 if ((sign % 2) != 0)
@@ -57,13 +34,14 @@ return (1);
  *Return: an int
  */
 
-int _atoi(char *s)
+long int _atoi(char *s)
 {
 
-int prod = 1;
-int fnum = 0;
-int num;
-int leng = 0;
+long int prod = 1;
+long int fnum = 0;
+long int num;
+long int leng = 0;
+long int ss = signs(s);
 while (*s != '\0')
 {
 leng++;
@@ -85,7 +63,7 @@ prod *= 10;
 leng--;
 s--;
 }
-fnum = signs(s) * fnum;
+fnum *= ss;
 
 return (fnum);
 
