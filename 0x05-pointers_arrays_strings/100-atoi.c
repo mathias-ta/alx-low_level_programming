@@ -7,9 +7,9 @@
  *Return: the sign
  */
 
-long int signs(char *s)
+int signs(char *s)
 {
-long int sign = 0;
+int sign = 0;
 while ((*s != '0') && !(*s >= '0' && *s <= '9'))
 {
 if (*s == '-')
@@ -34,14 +34,14 @@ return (1);
  *Return: an int
  */
 
-long int _atoi(char *s)
+int _atoi(char *s)
 {
 
-long int prod = 1;
-long int fnum = 0;
-long int num;
-long int leng = 0;
-long int ss = signs(s);
+int prod = 1;
+int fnum = 0;
+int num;
+int leng = 0;
+int ss = signs(s);
 while (*s != '\0')
 {
 leng++;
