@@ -19,8 +19,9 @@ while ((dest[i] != '\0') && (j <= (n - 1)))
 {
 dest[i] = src[j];
 i++;
+j++;
 }
-while (dest[j] != '\0')
+while (dest[i] != '\0')
 {
 i++;
 }
