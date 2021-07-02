@@ -8,7 +8,7 @@
  *Return: void
  */
 
-int reverse_array(int *a, int n)
+void reverse_array(int *a, int n)
 {
 
 int i = n - 1;
@@ -27,7 +27,5 @@ while (j < n)
 a[j] = rev_a[j];
 j++;
 }
-return (a);
-
 
 }
