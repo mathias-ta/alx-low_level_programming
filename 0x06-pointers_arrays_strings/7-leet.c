@@ -10,9 +10,9 @@
 char *leet(char *s)
 {
 
-char lt[] = ['a', 'e', 'o', 't', 'l'];
-char LT[] = ['A', 'E', 'O', 'T', 'L'];
-char num[] = ['4', '3', '0', '7', '1'];
+char lt[] = {'a', 'e', 'o', 't', 'l'};
+char LT[] = {'A', 'E', 'O', 'T', 'L'};
+char num[] = {'4', '3', '0', '7', '1'};
 int j = 0;
 int k = 0;
 
