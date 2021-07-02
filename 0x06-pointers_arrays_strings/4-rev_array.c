@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- *reverse_array - reveses content of an array
+ *reverse_array - reverses content of an array
  *@a: array
  *@n: number of an array
  *Return: void
