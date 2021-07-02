@@ -5,10 +5,10 @@
  *_strcmp - copies a string
  *@s1: string 1
  *@s2: string 2
- *Return: concatenated string
+ *Return: compared value
  */
 
-int *_strcmp(char *s1, char *s2)
+int _strcmp(char *s1, char *s2)
 {
 
 int i = 0;
