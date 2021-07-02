@@ -21,8 +21,9 @@ dest[i] = src[j];
 i++;
 j++;
 }
-while (dest[i] != '\0')
+while (i < n)
 {
+dest[i] = '\0';
 i++;
 }
 
