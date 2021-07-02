@@ -21,11 +21,4 @@ rev_a[j] = a[i];
 i--;
 j++;
 }
-i = 0;
-while (i < n)
-{
-a[i] = rev_a[i];
-i++;
-}
-
 }
