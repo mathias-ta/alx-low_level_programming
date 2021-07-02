@@ -7,7 +7,7 @@
  *Return: uppercase string
  */
 
-char *string_toupper(cchar *s)
+char *string_toupper(char *s)
 {
 
 int j = 0;
