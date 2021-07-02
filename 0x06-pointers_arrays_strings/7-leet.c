@@ -20,7 +20,7 @@ while (s[k] != '\0')
 {
 while (j < 5)
 {
-if (s[k] == s[j])
+if ((s[k] == lt[j]) || (s[k] == LT[j]))
 {
 s[k] = num[j];
 }
