@@ -20,6 +20,6 @@ s[j] = s[j] - ' ';
 }
 j++;
 }
- return (s);
+return (s);
 
 }
