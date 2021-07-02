@@ -15,7 +15,7 @@ int i = n - 1;
 int j = 0;
 int rev_a[n];
 
-while (a[i] != '\0')
+while (i >= 0)
 {
 rev_a[j] = a[i];
 i--;
