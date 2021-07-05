@@ -15,10 +15,10 @@ int j = 0;
 int counter = 0;
 int k = 0;
 char *ss;
-while (s[i] != '0')
+while (s != '0')
 {
 counter++;
-i++;
+s++;
 }
 i= 0;
 
