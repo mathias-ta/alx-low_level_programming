@@ -1,5 +1,4 @@
 #include "holberton.h"
-#define NULL 0
 
 /**
  *_strspn - gets length of aprifix
@@ -22,6 +21,11 @@ while (accept[j] != '\0')
 if (s[i] == accept[j])
 {
 count++;
+break;
+}
+if (accept[j + 1] == '\0' && s[i] != accept[j])
+{
+return (count);
 }
 j++;
 }
