@@ -1,4 +1,4 @@
-#include "holberton.h"
+bre#include "holberton.h"
 
 /**
  *_strchr - find a char from a string
@@ -12,6 +12,7 @@ char *_strchr(char *s, char c)
 
 unsigned int i = 0, j = 0;
 int counter = 0;
+int k = 0;
 char ss[200];
 while (s[i] != '0')
 {
@@ -30,10 +31,15 @@ ss[j] = s[i];
 i++;
 j++;
 }
-return (ss);
+k == 1;
+break;
 }
 i++;
 }
-
+if (k = 1)
+{
+return (ss);
+}
+else
 return (NULL);
 }
