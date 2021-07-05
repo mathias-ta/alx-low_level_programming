@@ -25,11 +25,9 @@ while (i < counter)
 {
 if (s[i] == c)
 {
-ss = s[i];
-k == 1;
 break;
 }
 i++;
 }
-return (ss);
+return (s[i]);
 }
