@@ -10,7 +10,7 @@
 char *_strchr(char *s, char c)
 {
 
-unsigned int i = 0, j = 0;
+int i = 0, j = 0;
 int counter = 0;
 int k = 0;
 char *ss;
