@@ -3,7 +3,7 @@
 /**
  *_strspn - gets length of aprifix
  *@s: string
- *@accept: prifix
+ *@accept: prefix
  *Return: number of bytes
  */
 
@@ -18,7 +18,7 @@ while (s[i] != '\0')
 {
 while (accept[j] != '\0')
 {
-if (s[i] == accept[j])
+if (s[i] == accept[j] && s[i] == ' ')
 {
 count++;
 break;
