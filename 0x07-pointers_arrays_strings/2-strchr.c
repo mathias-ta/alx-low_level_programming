@@ -15,12 +15,15 @@ int j = 0;
 
 while (1)
 {
+j = *s++;
 if (j == c)
 {
-return (s);
+return (s - 1);
 }
 else if (j == 0)
+{
 return (NULL);
-j = *s++;
+}
+
 }
 }
