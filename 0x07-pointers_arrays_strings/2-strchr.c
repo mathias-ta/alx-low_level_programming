@@ -1,4 +1,5 @@
 #include "holberton.h"
+#define NULL 0
 
 /**
  *_strchr - find a char from a string
