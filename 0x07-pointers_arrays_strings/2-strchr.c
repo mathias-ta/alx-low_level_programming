@@ -22,13 +22,15 @@ s++;
 }
 i= 0;
 
-while (i < counter)
+while (1)
 {
-if (s[i] == c)
+if (j == c)
 {
-break;
+return (s);
 }
-i++;
+else if (j == 0)
+return (NULL);
+j = *s++;
 }
-return (s[i]);
+
 }
