@@ -13,17 +13,16 @@ char *_strchr(char *s, char c)
 int i = 0;
 int j = 0;
 
-while (1)
+while (s[i] != '\0' && s[i] != c)
 {
-j = *s++;
-if (j == c)
-{
-return (s - 1);
+i++;
 }
-else if (j == 0)
+if (s[i] == c)
+{
+return (&s[i]);
+}
+else
 {
 return (NULL);
-}
-
 }
 }
