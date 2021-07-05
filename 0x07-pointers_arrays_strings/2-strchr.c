@@ -12,7 +12,7 @@ char *_memcpy(char *s, char c)
 
 unsigned int i = 0, j = 0;
 int counter = 0;
-char *s;
+char *ss;
 while (s[i] != '0')
 {
 counter++;
