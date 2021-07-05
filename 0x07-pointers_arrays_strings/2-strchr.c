@@ -32,6 +32,7 @@ j++;
 }
 return (ss);
 }
+i++;
 }
 
 return (NULL);
