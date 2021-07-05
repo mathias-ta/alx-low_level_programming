@@ -19,7 +19,7 @@ while (s[i] != '\0' && co != 1)
 {
 while (accept[j] != '\0')
 {
-if (s[i] == accept[j])
+if (s[i] == accept[j] && s[i] != ' ')
 {
 co = 1;
 break;
