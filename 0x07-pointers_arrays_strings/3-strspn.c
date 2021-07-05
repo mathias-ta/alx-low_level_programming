@@ -23,7 +23,9 @@ if (s[i] == accept[j])
 {
 count++;
 }
+j++;
 }
+i++;
 }
 return (count);
 }
