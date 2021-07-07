@@ -1,27 +1,6 @@
 #include "holberton.h"
 
 /**
- *count - counts char
- *@s: string to be counted
- *Return: void
- */
-
-int count(char *s)
-{
-int c = 0;
-if (*s != '\0')
-{
-c++;
-s++;
-count(s);
-}
-else
-{
-return (c);
-}
-}
-
-/**
  *_print_rev_recursion - prints reverse of a string
  *@s: string to be printed
  *Return: void
@@ -29,17 +8,12 @@ return (c);
 
 void _print_rev_recursion(char *s)
 {
-int i = count(s);
-_putchar(*s);
 s--;
-if (i >= 0)
+if (*s == 0)
 {
-_print_rev_recursion(s);
-i--;
+return;
 }
-else
-{
-_putchar('\n');
-}
+_print_rev_recursion(s + 1);
+_putchar(*s);
 
 }
