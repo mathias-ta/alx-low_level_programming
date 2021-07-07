@@ -21,13 +21,13 @@ return (0);
 }
 
 /**
- *_sqrt_recursion - sqwuare root of a number
+ *is_prime_number - check whether n is prime or not
  *@n: number
- *Return: square root of n
+ *Return: 1 if it is prime and 0 if it is not
  */
 
-int _sqrt_recursion(int n)
+int is_prime_number(int n)
 {
 
-return (_sqrt(n, 2));
+return (prime(n, 2));
 }
