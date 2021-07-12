@@ -35,8 +35,7 @@ rem = que % cents[i];
 que = rem / cents[i];
 sum += que;
 }
-printf("%d\n", sum);
-return (0);
+return (sum);
 }
 else
 {
