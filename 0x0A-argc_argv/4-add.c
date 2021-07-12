@@ -42,7 +42,7 @@ return (0);
 }
 while (i < argc)
 {
-if (is _num(argv[i]))
+if (is_num(argv[i]))
 {
 sum += atoi(argv[i]);
 }
