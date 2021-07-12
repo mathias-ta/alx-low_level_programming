@@ -18,15 +18,15 @@ int rem = 0;
 int que;
 int i = 0;
 
-if (atoi(argv[1]) < 0)
+if (atoi(argv[]) < 0)
 {
 printf("0\n");
 return (0);
 }
 if (argc == 1)
 {
-que = atoi(argv[1]) / 25;
-rem = atoi(argv[1]) % 25;
+que = atoi(argv[]) / 25;
+rem = atoi(argv[]) % 25;
 sum += que;
 while (rem != 0)
 {
