@@ -18,7 +18,7 @@ int rem = 0;
 int que = 0;
 int i = 0;
 
-if (argv[1][0] == "-")
+if (atoi(argv[1]) < 0)
 {
 printf("0\n");
 return (0);
