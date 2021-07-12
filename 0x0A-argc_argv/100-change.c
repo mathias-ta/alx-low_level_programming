@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
 int cents[] = {25, 10, 5, 2};
 int sum = 0;
 int rem = 0;
-int que;
+int que = 0;
 int i = 0;
 
 if (argv[1][0] == "-")
