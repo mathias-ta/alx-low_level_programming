@@ -23,7 +23,12 @@ if (atoi(argv[1]) < 0)
 printf("0\n");
 return (0);
 }
-if (argc == 1)
+else if (argc != 2)
+{
+printf("Error\n");
+return (1);
+}
+else if (argc == 2)
 {
 que = atoi(argv[1]) / 25;
 rem = atoi(argv[1]) % 25;
@@ -36,11 +41,6 @@ que = rem / cents[i];
 sum += que;
 }
 printf("%d\n", sum);
+}
 return (0);
-}
-else
-{
-printf("Error\n");
-return (1);
-}
 }
