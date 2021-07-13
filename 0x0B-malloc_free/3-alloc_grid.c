@@ -18,7 +18,7 @@ if (width == 0 || height == 0)
 return (NULL);
 }
 p = malloc(sizeof(int) * (width) * (height) +1);
-if (p == NULL)
+if (p == 0)
 {
 return (NULL);
 }
