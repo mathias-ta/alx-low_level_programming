@@ -23,6 +23,15 @@ while (i < height)
 p[i] = malloc(sizeof(int) * width);
 while (j < width)
 {
+if (p[i] == NULL)
+{
+for (i = 0; i < height; i++)
+{
+free(p[i]);
+}
+free(p);
+return (NULL);
+}
 p[i][j] = 0;
 j++;
 }
