@@ -19,7 +19,7 @@ return (NULL);
 }
 while (i < size)
 {
-p[i] = c;
+*(p + i) = c;
 i++;
 }
 return (p);
