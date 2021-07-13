@@ -18,7 +18,7 @@ while (i < height)
 {
 while (grid[i][j] != '\0')
 {
-free(grid[i][j]);
+free((int **)grid[i][j]);
 j++;
 }
 j = 0;
