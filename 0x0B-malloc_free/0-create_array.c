@@ -1,7 +1,6 @@
 #include "holberton.h"
 #include <stdio.h>
 #include <stdlib.h>
-#define NULL 0
 
 /**
  *create_array - creates array with the specified size and assign a value
