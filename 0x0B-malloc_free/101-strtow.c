@@ -22,13 +22,14 @@ if (len == 0)
 {
 return (NULL);
 }
-p = malloc(sizeof(int *) * (len));
+p = malloc(sizeof(char *) * (len));
 if (p == NULL)
 {
 return (NULL);
 }
 while (i < len)
 {
+p[i] = malloc(sizeof(char) * len);
 if (str[i] != ' ' || str[i] != '\t')
 {
 p[j][i] = str[i];
