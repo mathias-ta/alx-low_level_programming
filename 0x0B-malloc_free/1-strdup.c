@@ -16,7 +16,7 @@ if (p == NULL || str == NULL)
 {
 return (NULL);
 }
-while (*str != "\0")
+while (*str != '\0')
 {
 *(p + i) = *(str + i);
 i++;
