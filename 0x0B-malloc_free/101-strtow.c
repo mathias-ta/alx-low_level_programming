@@ -10,7 +10,7 @@
 
 char **strtow(char *str)
 {
-int i = 0, j = 0, len = 0;
+int i = 0, j = 0, len = 0, k = 0;
 char **p;
 while (str[i] != '\0')
 {
@@ -27,21 +27,24 @@ if (p == NULL)
 {
 return (NULL);
 }
-while (i < len)
+while (str[i] != 0)
 {
 p[i] = malloc(sizeof(char) * len);
-if (str[i] != ' ' || str[i] != '\t')
+if (str[k] != ' ' || str[k] != '\t')
 {
-p[j][i] = str[i];
-}
-if (str[i] == ' ' || str[i] == '\t')
-{
-if (str[i + 1] != ' ')
-{
-j++;
-}
-}
+p[j][i] = str[k];
 i++;
+}
+if (str[k] == ' ' || str[k] == '\t')
+{
+if (str[k + 1] != ' ')
+{
+p[j][i] = '\0';
+j++;
+i = 0;
+}
+}
+k++;
 }
 return (p);
 }
