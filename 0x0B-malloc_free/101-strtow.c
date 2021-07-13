@@ -30,13 +30,13 @@ return (NULL);
 while (i < len)
 {
 p[i] = malloc(sizeof(int) * len);
-if (p[i] != ' ' || p[i] != '\t')
+if (str[i] != ' ' || str[i] != '\t')
 {
 p[j][i] = str[i];
 }
-if (p[i] == ' ' || p[i] == '\t')
+if (str[i] == ' ' || str[i] == '\t')
 {
-if (p[i + 1] != ' ')
+if (str[i + 1] != ' ')
 {
 j++;
 }
