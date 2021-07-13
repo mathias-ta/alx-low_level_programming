@@ -14,7 +14,7 @@ unsigned int i = 0;
 char *p = malloc(size);
 while (i < size)
 {
-p[1] = c;
+p[i] = c;
 i++;
 }
 return (p);
