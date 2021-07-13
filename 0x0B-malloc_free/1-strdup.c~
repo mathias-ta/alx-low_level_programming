@@ -1,0 +1,30 @@
+#include "holberton.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+/**
+ *_strdup - duplicates a string
+ *@str: string to be duplicate
+ *Return: duplicated string
+ */
+
+char *_strdup(char *str)
+{
+unsigned int i = 0;
+ char *p = malloc(size_of(char));
+if (p == NULL)
+{
+return (NULL);
+}
+if (size > 0)
+{
+while (i < size)
+{
+*(p + i) = c;
+i++;
+}
+return (p);
+}
+return (NULL);
+
+}
