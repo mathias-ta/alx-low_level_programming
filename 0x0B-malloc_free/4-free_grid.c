@@ -16,9 +16,9 @@ if (grid != NULL)
 {
 while (i < height)
 {
-while (p[i][j] != NULL)
+while (grid[i][j] != NULL)
 {
-free(p[i][j]);
+free(grid[i][j]);
 j++;
 }
 j = 0;
