@@ -22,9 +22,6 @@ i++;
 }
 return (p);
 }
-else
-{
 return (NULL);
-}
 
 }
