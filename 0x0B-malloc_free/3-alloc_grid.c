@@ -17,10 +17,11 @@ if (width == 0 || height == 0)
 {
 return (NULL);
 }
-p = (int **)malloc(sizeof(int) * sizeof(int) * (width) * (height) +1);
-while (i < width)
+p = malloc(sizeof(int) * (height));
+while (i < height)
 {
-while (j < height)
+p[i] = malloc(sizeof(int) * width);
+while (j < width)
 {
 p[i][j] = 0;
 j++;
