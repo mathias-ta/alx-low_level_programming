@@ -24,7 +24,7 @@ return (NULL);
 }
 if (len == 1 && str[k] == ' ')
 {
-return NULL;
+return (NULL);
 }
 p = malloc(sizeof(char *) * (len));
 if (p == NULL)
