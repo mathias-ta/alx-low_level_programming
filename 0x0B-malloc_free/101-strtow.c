@@ -27,10 +27,10 @@ if (p == NULL)
 {
 return (NULL);
 }
-while (str[i] != 0)
+while (str[k] != 0)
 {
-p[i] = malloc(sizeof(char) * len);
-if (str[k] != ' ' || str[k] != '\t')
+p[j] = malloc(sizeof(char) * len);
+if (str[k] != ' ' || str[k] != '\0')
 {
 p[j][i] = str[k];
 i++;
