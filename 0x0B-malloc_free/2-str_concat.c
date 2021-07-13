@@ -35,14 +35,14 @@ if (p == NULL)
 return (NULL);
 }
 i = 0;
-while (str[i] != '\0')
+while (s1[i] != '\0')
 {
-p[i] = str1[i];
+p[i] = s1[i];
 i++;
 }
-while (str2[j] != '\0')
+while (s2[j] != '\0')
 {
-p[i] = str2[j];
+p[i] = s2[j];
 i++;
 j++;
 }
