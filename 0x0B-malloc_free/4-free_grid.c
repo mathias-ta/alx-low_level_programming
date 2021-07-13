@@ -16,7 +16,6 @@ if (grid != NULL)
 {
 while (i < height)
 {
-p[i] = malloc(sizeof(int) * width);
 while (j < width)
 {
 free(p[i][j]);
