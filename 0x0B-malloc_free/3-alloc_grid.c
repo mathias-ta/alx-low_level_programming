@@ -18,10 +18,6 @@ if (width == 0 || height == 0)
 return (NULL);
 }
 p = (int **)malloc(sizeof(int) * (width) * (height) +1);
-if (p == 0)
-{
-return (NULL);
-}
 while (i < width)
 {
 while (j < height)
