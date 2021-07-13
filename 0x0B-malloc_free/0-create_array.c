@@ -22,7 +22,7 @@ i++;
 }
 return (p);
 }
-else (size == 0)
+else
 {
 return (NULL);
 }
