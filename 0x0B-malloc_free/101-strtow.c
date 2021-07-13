@@ -29,7 +29,6 @@ return (NULL);
 }
 while (i < len)
 {
-p[i] = malloc(sizeof(int) * len);
 if (str[i] != ' ' || str[i] != '\t')
 {
 p[j][i] = str[i];
