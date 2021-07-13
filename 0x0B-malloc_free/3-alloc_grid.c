@@ -17,7 +17,7 @@ if (width == 0 || height == 0)
 {
 return (NULL);
 }
-p = malloc(sizeof(int) * (height));
+p = malloc(sizeof(int *) * (height));
 while (i < height)
 {
 p[i] = malloc(sizeof(int) * width);
