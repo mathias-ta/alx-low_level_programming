@@ -23,6 +23,10 @@ len++;
 i++;
 }
 p = malloc(sizeof(char) * len + 1);
+if (p == NULL)
+{
+return (NULL);
+}
 i = 0;
 while (str[i] != '\0')
 {
