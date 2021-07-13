@@ -22,7 +22,7 @@ if (len == 0)
 {
 return (NULL);
 }
-if (len == 1 && str[k] == ' ' )
+if (len == 1 && str[k] == ' ')
 {
 return NULL;
 }
@@ -39,7 +39,7 @@ if (str[k] != ' ' || str[k] != '\0')
 p[j][i] = str[k];
 i++;
 }
-if (str[k] == ' ' || str[k] == '\t')
+if (str[k] == ' ')
 {
 if (str[k + 1] != ' ')
 {
