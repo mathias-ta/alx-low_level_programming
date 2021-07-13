@@ -18,7 +18,7 @@ while (*str != '\0')
 len++;
 str++;
 }
-p = malloc(sizeof(char) * len);
+p = malloc(sizeof(char) * len + 1);
 if (p == NULL || str == NULL)
 {
 return (NULL);
