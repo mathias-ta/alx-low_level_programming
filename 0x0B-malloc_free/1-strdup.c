@@ -19,7 +19,7 @@ len++;
 str++;
 }
 p = malloc(sizeof(char) * len + 1);
-if (p == NULL || str == NULL)
+if (str == NULL)
 {
 return (NULL);
 }
