@@ -16,7 +16,7 @@ if (grid != NULL)
 {
 while (i < height)
 {
-while (j < width)
+while (p[i][j] != NULL)
 {
 free(p[i][j]);
 j++;
