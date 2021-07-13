@@ -6,7 +6,7 @@
  *create_array - creates array with the specified size and assign a value
  *@size: size of the array to be created
  *@c: initializing value
- *Return - array created
+ *Return: array created
  */
 
 char *create_array(unsigned int size, char c)
@@ -17,6 +17,10 @@ while (i < size)
 {
 *(p + i) = c;
 i++;
+}
+if (size == 0)
+{
+return (NULL);
 }
 return (p);
 }
