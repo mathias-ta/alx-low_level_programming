@@ -16,8 +16,6 @@ if (p == NULL || str == NULL)
 {
 return (NULL);
 }
-if (size > 0)
-{
 while (*str != "\0")
 {
 *(p + i) = *(str + i);
@@ -26,7 +24,5 @@ str++;
 p++;
 }
 return (p);
-}
-return (NULL);
 
 }
