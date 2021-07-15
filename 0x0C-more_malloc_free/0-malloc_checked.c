@@ -5,14 +5,16 @@
 /**
  *malloc_checked - reserves place for amount of b
  *@b: amount of memory to be reserved
- *Return: void
+ *Return: pointer to the memory space
  */
 
 void *malloc_checked(unsigned int b)
 {
-malloc(b);
-if (malloc(b) == NULL)
+void *sps;
+sps = malloc(b);
+if (sps == NULL)
 {
-return (98);
+exit(98);
 }
+return (sps);
 }
