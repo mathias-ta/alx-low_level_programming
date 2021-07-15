@@ -22,17 +22,8 @@ if (s2 == NULL)
 {
 s2 = "";
 }
-while (s1[i] != '\0')
-{
-len1++;
-i++;
-}
-i = 0;
-while (s2[i] != '\0')
-{
-len2++;
-i++;
-}
+len1 = _strlen(s1);
+len2 = _strlen(s2);
 if (n > len2)
 {
 p = malloc(sizeof(char) * (len1 + len2) +1);
