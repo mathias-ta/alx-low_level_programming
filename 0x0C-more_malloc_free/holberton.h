@@ -11,4 +11,6 @@ int *array_range(int min, int max);
 
 int _strlen(char *s);
 
+int _putchar(char *c);
+
 #endif
