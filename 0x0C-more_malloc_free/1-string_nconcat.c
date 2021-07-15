@@ -2,6 +2,16 @@
 #include <stdlib.h>
 #include "holberton.h"
 
+int _strlen(char *s)
+{
+int i;
+while (s[i] != '\0')
+{
+i++;
+}
+return (i);
+}
+
 /**
  *string_nconcat - concatinate two strings with n chars from the s2
  *@s1: string 1
