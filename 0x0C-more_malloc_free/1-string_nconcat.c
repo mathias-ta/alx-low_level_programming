@@ -27,6 +27,9 @@ len2 = _strlen(s2);
 if (n > len2)
 n = len2;
 
+if (n < 0)
+return (NULL);
+
 t = len1 + n + 1;
 p = malloc(sizeof(char) * t);
 if (p == NULL)
