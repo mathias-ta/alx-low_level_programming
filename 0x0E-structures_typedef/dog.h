@@ -14,7 +14,8 @@ typedef struct dog dog_t;
  *@owner: member
  */
 
-struct dog {
+struct dog
+{
 char *name;
 float age;
 char *owner;
