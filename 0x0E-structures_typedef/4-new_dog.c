@@ -15,7 +15,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 dog_t *d;
 if (d == NULL) /*Validate d*/
 {
-return;
+return (NULL);
 }
 
 (*d).name = strcpy(name);
