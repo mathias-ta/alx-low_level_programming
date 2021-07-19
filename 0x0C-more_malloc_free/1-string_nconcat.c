@@ -2,56 +2,57 @@
 #include <stdlib.h>
 #include "holberton.h"
 
-int _strlen(char *s)
+/**
+ * _strlen - calculate length of a string
+ * @str: string
+ * Return: length of the string
+ */
+
+int _strlen(char *str)
 {
 int i;
-while (s[i] != '\0')
+
+for (i = 0; string[i] != '\0'; i++)
 {
-i++;
 }
 return (i);
 }
 
 /**
- *string_nconcat - concatinate two strings with n chars from the s2
- *@s1: string 1
- *@s2: string 2
- *@n: number of char to be concatenated
- *Return: concatenated string
+ * string_nconcat - concatenate s1 with n char of s2
+ * @s1: string 1
+ * @s2: string 2
+ * @n: number of chars to be concatinated
+ * Return: pointer to the concatenated string
  */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-int i, j, len1 = 0, len2 = 0, t;
 char *p;
+int nn, len, i, j;
+
+nn = n;
+
 if (s1 == NULL)
-{
 s1 = "";
-}
 if (s2 == NULL)
-{
 s2 = "";
-}
-len1 = _strlen(s1);
-len2 = _strlen(s2);
-if (n > len2)
-n = len2;
-
-if (n < 0)
+if (nn < 0)
 return (NULL);
+if (nn >= _strlen(s2))
+nn = _strlen(s2);
 
-t = len1 + n + 1;
-p = malloc(sizeof(char) * t);
+len = _strlen(s1) + nn + 1;
+
+p = malloc(sizeof(*p) * len);
 if (p == NULL)
-{
 return (NULL);
-}
+
 for (i = 0; s1[i] != '\0'; i++)
 p[i] = s1[i];
-
-for (j = 0; j < n && s2[j] != '\0'; j++)
+for (j = 0; j < nn; j++)
 p[i + j] = s2[j];
-
 p[i + j] = '\0';
+
 return (p);
 }
