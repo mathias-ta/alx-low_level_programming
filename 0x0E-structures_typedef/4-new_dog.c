@@ -17,9 +17,9 @@ if (d == NULL) /*Validate d*/
 return;
 }
 
-(*d).name = name;
+(*d).name = strcpy(name);
 (*d).age = age;
-(*d).owner = owner;
+(*d).owner = strcpy(owner);
 
 return d;
 }
