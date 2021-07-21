@@ -6,26 +6,25 @@
  *@array: array
  *@size: size of an array
  *@cmp: function used to compare numbers
- *Return: void
+ *Return: index where the integer is found, -1 if not found
  */
 
 int int_index(int *array, int size, int (*cmp)(int))
 {
-int i = 0;
+int i;
 
 if (size <= 0)
 return (-1);
 
 if (array != NULL && cmp != NULL)
 {
-while (i < size)
+for (i = 0; i < size; i++)
 {
 cmp(*(array + i));
 if (cmp(*(array + i)))
 {
 return (i);
 }
-i++;
 }
 }
 return (-1);
