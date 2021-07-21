@@ -30,6 +30,6 @@ exit(100);
 }
 a = atoi(argv[0]);
 b = atoi(argv[2]);
-printf("%d\n", f(n1, n2));
+printf("%d\n", f(a, b));
 return (0);
 }
