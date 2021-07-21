@@ -15,7 +15,7 @@ while (ops[i].op != NULL)
 {
 if (*s == ops[i].op)
 {
-return (ops[i].f)
+return (ops[i].f);
 }
 i++;
 }
