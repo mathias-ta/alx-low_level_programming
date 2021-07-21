@@ -10,23 +10,26 @@
  */
 int main(int argc, char *argv[])
 {
-int a, b;;
-if (argc != 3)
+int a, b;
+int (*f)(int)(int);
+if (argc != 4)
 {
 printf("Error\n");
 exit(98);
 }
-if (!(get_op_func(argv[1])))
+f = get_op_func(argv[2]);
+if (f == NULL || argv[2][1] != '\0')
 {
 printf("Error\n");
 exit(99);
 }
-if (argv[2] == 0 && (argv[1] == "/" || argv[1] == "%"))
+if (argv[3] == '0' && (argv[2][0] == "/" || argv[2][0] == "%"))
 {
 printf("Error\n");
 exit(100);
 }
 a = atoi(argv[0]);
 b = atoi(argv[2]);
-return(get_op_func(argv[1]));
+printf("%d\n", f(n1, n2));
+return (0);
 }
