@@ -5,7 +5,7 @@
 /**
  *array_iterator - execute a functions of array 
  *@array: array
- *@size0: size of an array
+ *@size: size of an array
  *@action: pointer of the function
  *Return: void
  */
