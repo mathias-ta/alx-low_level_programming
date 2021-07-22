@@ -62,7 +62,12 @@ char *separator = "";
 int i = 0, j = 0;
 va_list vaList;
 
-datatype format_choice[] = {{'c', print_char}, {'i', print_int}, {'f', print_float}, {'s', print_string}, {'\0', NULL}};
+datatype format_choice[] = {
+			    {'c', print_char},
+			    {'i', print_int},
+			    {'f', print_float},
+			    {'s', print_string},
+			    {'\0', NULL}};
 
 va_start(vaList, format);
 while (format != NULL && format[j] != '\0')
