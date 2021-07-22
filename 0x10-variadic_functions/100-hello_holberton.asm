@@ -1,14 +1,14 @@
 	section .data
-	text db "Hell, Holberton",10
+	text db "Hello, Holberton",10
 	section .text
 	global _start
-_strart:
-	mov rax, l
-	mov rdi, l
+_start:
+	mov rax, 1
+	mov rdi, 1
 	mov rsi, text
-	mov rdx, l4
+	mov rdx, 14
 	syscall
 
-	mov rax 60
+	mov rax, 60
 	mov rdi, 0
 	syscall
