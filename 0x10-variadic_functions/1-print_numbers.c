@@ -23,6 +23,8 @@ printf("%d", va_arg(vaList, int));
 
 if (i != n && separator != NULL)
 printf("%s", separator);
+
+i++;
 }
 va_end(vaList);
 }
