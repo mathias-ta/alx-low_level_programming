@@ -48,7 +48,7 @@ if (str == NULL)
 printf("(nil)");
 return;
 }
-printf("%s", s);
+printf("%s", str);
 }
 
 /**
