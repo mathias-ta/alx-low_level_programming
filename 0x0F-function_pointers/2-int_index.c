@@ -2,7 +2,7 @@
 #include "function_pointers.h"
 
 /**
-*int_index- searches an integer 
+*int_index-searches an integer 
 *@array: array
 *@size: size of an array
 *@cmp: function used to compare numbers
@@ -20,6 +20,7 @@ if (array != NULL && cmp != NULL)
 for (i = 0; i < size; i++)
 {
 cmp(*(array + i));
+
 if (cmp(*(array + i)))
 {
 return (i);
