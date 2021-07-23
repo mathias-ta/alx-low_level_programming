@@ -12,7 +12,7 @@ main:
 	mov rdi,fmt
 	mov rsi,str
 	mov rax,0
-	call printf
+	syscall
 
 	pop rbp
 	mov rax,0
