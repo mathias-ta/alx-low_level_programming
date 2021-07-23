@@ -8,7 +8,6 @@
  *@cmp: function used to compare numbers
  *Return: index where the integer is found, -1 if not found
  */
-
 int int_index(int *array, int size, int (*cmp)(int))
 {
 int i;
