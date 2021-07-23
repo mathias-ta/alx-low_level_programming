@@ -9,7 +9,7 @@ main:
 	int 80h
 
 	mov eax,1
-	int 80h
+	mov rax,0
 	ret
 
 str:	db "Hello, Holberton", 10
