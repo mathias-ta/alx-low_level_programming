@@ -13,4 +13,4 @@ main:
 	mov edx,18
 	int 80h
 	mov eax,1
-	int 80h
+	ret
