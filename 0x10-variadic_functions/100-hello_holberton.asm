@@ -1,25 +1,19 @@
-section .data
-	str db 0xa, "Hello, Holberton", 0xa, 0xa, 0
+	extern printf
 
-section .text
-	global _start
+	section .data
+str:	db "Hello, Holberton", 0
+fmt:	db "%s", 10, 0
 
-_start:
-	mov rdi, str
-	xor rcx, rcx
-	not rcx
-	xor al,al
-	cld
-	repnz scasb
-	not rcx
-	dec rcx
-	mov rdx, rcx
+	section .text
 
-	mov rsi, str
-	mov rax, 1
-	mov rdi, rax
-	syscall
+	global main
+main:
+	push rbp
+	mov rdi,fmt
+	mov rsi,str
+	mov rax,0
+	call printf
 
-	xor rdi,rdi
-	mov rax, 0x3c
-	syscall
+	pop rbp
+	mov rax,0
+	ret
