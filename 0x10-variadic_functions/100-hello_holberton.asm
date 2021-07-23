@@ -1,8 +1,3 @@
-	extern printf
-
-	section .data
-str:	db "Hello, Holberton", 0ah, 0dh
-
 	section .text
 
 	global main
@@ -12,5 +7,8 @@ main:
 	mov ecx,str
 	mov edx,18
 	int 80h
+
 	mov eax,1
 	ret
+
+str:	db "Hello, Holberton", 0ah, 0dh
