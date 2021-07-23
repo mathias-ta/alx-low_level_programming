@@ -28,8 +28,8 @@ if (argv[3][0] == '0' && (argv[2][0] == '/' || argv[2][0] == '%'))
 printf("Error\n");
 exit(100);
 }
-a = atoi(argv[0]);
-b = atoi(argv[2]);
+a = atoi(argv[1]);
+b = atoi(argv[3]);
 printf("%d\n", f(a, b));
 return (0);
 }
