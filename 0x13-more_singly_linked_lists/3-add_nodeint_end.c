@@ -25,8 +25,8 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 	{
 		temp = *head; /* set tmp ptr to iterate w/o moving head ptr */
 
-		while ((*tmp).next != NULL) /* iterate till last node */
-			temp = (*tmp).next;
+		while ((*temp).next != NULL) /* iterate till last node */
+			temp = (*temp).next;
 		(*temp).next = new_node; /* link last node to new node */
 	}
 
