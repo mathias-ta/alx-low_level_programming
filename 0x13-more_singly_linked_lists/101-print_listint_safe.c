@@ -79,7 +79,7 @@ size_t print_listint_safe(const listint_t *head)
 		{
 			printf("[%p] %d\n", (void *)temp, (*temp).n);
 			num_nodes += 1;
-			tmp = (*temp).next;
+			temp = (*temp).next;
 		}
 	}
 	else if (loop_found == 0)
