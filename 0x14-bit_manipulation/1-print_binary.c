@@ -1,9 +1,9 @@
-#include "holberton.h"
+#include "main.h"
 #include <stdio.h>
 /**
- * print_binary - converts unsigned int to binary
+ * print_binary - converts unsigned int to binary and print
  * @n: unsigned int
- * Return: binary
+ * Return: void
  */
 void print_binary(unsigned long int n)
 {
