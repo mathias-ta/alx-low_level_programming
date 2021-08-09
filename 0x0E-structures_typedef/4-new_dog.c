@@ -64,7 +64,7 @@ if (cpy_of_name == NULL)
 free(d);
 return (NULL);
 }
- (*d).name = _strcpy(cpy_of_name, name);
+(*d).name = _strcpy(cpy_of_name, name);
 }
 
 (*d).age = age;

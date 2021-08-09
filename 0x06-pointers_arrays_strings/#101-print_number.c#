@@ -1,0 +1,27 @@
+#include "holberton.h"
+#include <stdio.h>
+
+/**
+ *print_number - print integers
+ *@s: string
+ *Return: void
+ */
+
+void print_number(int n)
+{
+  int num = n;
+  int c = 0;
+  while (num != 0)
+    {
+      n /= 10;
+      _putchar(r);
+    }
+  d = pow(10, c));
+  while (d != 0)
+    {
+      n /= d;
+      putchar(n);
+      c--;
+      d = pow(10, c);
+
+}
