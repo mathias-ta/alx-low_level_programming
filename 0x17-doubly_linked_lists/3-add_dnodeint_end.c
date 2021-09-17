@@ -14,13 +14,11 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 	if (!head)
 		return (NULL);
 
-	/* malloc and set new node data */
 	new = malloc(sizeof(struct dlistint_s));
 	if (!new)
 		return (NULL);
 	new->n = n;
 
-	/* account for empty linked list */
 	if (*head == NULL)
 	{
 		*head = new;
@@ -29,7 +27,6 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 		return (new);
 	}
 
-	/* traverse to last node and insert */
 	last = *head;
 	while (last->next != NULL)
 		last = last->next;
